@@ -1,37 +1,49 @@
+/* Font & Warna */
 body {
     font-family: 'Poppins', sans-serif;
-    text-align: center;
+    background: #0c0c0c;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    overflow-x: hidden;
     color: white;
-    padding: 50px 20px;
 }
 
-h1, h2 {
-    font-family: 'Playfair Display', serif;
+/* Efek Bintang */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-}
-
-.gallery img {
-    width: 100px;
-    margin: 5px;
-}
-
-button {
-    background-color: #2575fc;
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../assets/bg.jpg') center/cover no-repeat;
+    text-align: center;
     color: white;
+}
+
+/* Tombol */
+.animated-button {
+    padding: 12px 24px;
+    background: gold;
     border: none;
-    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.animated-button:hover {
+    transform: scale(1.1);
+}
+
+/* Galeri */
+.galeri img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
 }
