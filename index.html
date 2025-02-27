@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Nama Pengantin</h1>
+        <p>Dengan penuh cinta, kami mengundang Anda ke hari bahagia kami.</p>
+        <p><b>Tanggal: [Isi Tanggal]</b></p>
+    </header>
+
+    <section id="countdown">
+        <h2>Hitung Mundur</h2>
+        <p id="timer"></p>
+    </section>
+
+    <section id="rsvp">
+        <h2>Konfirmasi Kehadiran</h2>
+        <form id="rsvpForm">
+            <input type="text" id="nama" placeholder="Nama Anda" required>
+            <button type="submit">Kirim</button>
+        </form>
+        <p id="rsvpStatus"></p>
+    </section>
+
+    <section id="lokasi">
+        <h2>Lokasi Acara</h2>
+        <iframe src="https://maps.google.com/maps?q=Lokasi%20Pernikahan&t=&z=15&output=embed"></iframe>
+    </section>
+
+    <section id="galeri">
+        <h2>Galeri Foto</h2>
+        <div class="gallery">
+            <img src="foto1.jpg" alt="Foto Prewedding">
+            <img src="foto2.jpg" alt="Foto Prewedding">
+        </div>
+    </section>
+
+    <section id="musik">
+        <h2>Lagu Cinta Kami</h2>
+        <audio controls>
+            <source src="lagu.mp3" type="audio/mpeg">
+            Maaf, browser Anda tidak mendukung audio.
+        </audio>
+    </section>
+</body>
+</html>
